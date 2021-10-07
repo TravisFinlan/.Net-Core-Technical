@@ -1,0 +1,20 @@
+<form novalidate #form="ngForm" (submit)="onSubmit(form)">
+  <input type="hidden" name="id"
+         value="service.formData.id" [(ngModel)]="service.formData.id"/>
+  <div class="form-row">
+    <div class="form-check col-md-3">
+      <label>Is Complete</label>
+      <input type="checkbox" class="form-control form-check-input" placeholder="Is Complete"
+             name="isComplete" #firstname="ngModel" [disabled]="service.formData.id == 0" [(ngModel)]="service.formData.isComplete" required />
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <input class="form-control form-control-lg" placeholder="Description"
+             name="description" #firstname="ngModel" [(ngModel)]="service.formData.description" required />
+    </div>
+    <div class="form-group">
+      <label></label>
+      <button class="btn btn-primary btn-lg btn-block" type="submit" [disabled]="!service.formData.description">Submit</button>
+    </div>
+    </div>
+</form>

@@ -1,0 +1,24 @@
+<div class="jumbotron py-2">
+  <h1 class="display-4 text-center">To Do's</h1>
+</div>
+<div class="row">
+  <app-todo-form></app-todo-form>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Is Complete</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of service.list">
+        <td (click)="populateForm(row)">{{row.description}}</td>
+        <td (click)="populateForm(row)">{{row.isComplete}}</td>
+        <td>
+          <i class="far fa-trash-alt fa-lg text-danger" style="padding-left:20px;" (click)="onDelete(row.id)"></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> 
