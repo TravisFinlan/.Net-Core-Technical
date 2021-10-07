@@ -10,7 +10,6 @@ export class ToDoService {
   constructor(private http: HttpClient) {
   }
 
-  //readonly _baseUrl = "https://localhost:44336/api/ToDo";
   readonly _baseUrl = window.location.origin + "/api/ToDo";
 
   formData: ToDo = new ToDo();
