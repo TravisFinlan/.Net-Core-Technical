@@ -9,6 +9,8 @@ For the backend, I did use the EntityFrameworkCore package for a basic ORM and m
 I've included basically everything in this repo, so there shouldn't be any setup required. Once downloaded, restore packages and build solution should be all that's needed.
 
 ## Usage
-To add a new TODO, enter a value into the Description and click 'Submit'. This will create a new TODO where IsComplete = false;
+To Add a new TODO, enter a value into the Description and click 'Submit'. This will create a new TODO where IsComplete = false;
 
-To edit an existing TODO, click the row you want to edit and the inputs will be populated with that data. Once the form is populated, clicking the 'Submit' button will save any updates made. 
+To Edit an existing TODO, click the row you want to edit and the inputs will be populated with that data. Once the form is populated, clicking the 'Submit' button will save any updates made. 
+
+To Delete an existing TODO, click the inline Red Trashcan icon under the Action column.
